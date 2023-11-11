@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATION</title>
+    <script>
+        let numOflight = prompt("ENTER NUMBER OF LIGHT")
+        let numOfFan = prompt("ENTER NUMBER OF FAN")
+        let numOfAc = prompt("ENTER NUMBER OF AC")
+        let numOfFridge = prompt("ENTER NUMBER OF FRIDGE")
+
+        let lightTOTALwatt = (Number(numOflight) * 5)
+        let fanTOTALwatt = (Number(numOfFan) * 10)
+        let acTOTALwatt = (Number(numOfAc) * 80)
+        let fridgeTOTALwatt = (Number(numOfFridge) * 50)
+
+        let totalWATt = (lightTOTALwatt + fanTOTALwatt + acTOTALwatt + fanTOTALwatt)
+        document.write(`<h1 style="font-family:ROBOTO">YOUR TOTAL WATT = ${totalWATt} WATT </h1>`)
+
+        let result = (lightTOTALwatt + fanTOTALwatt + acTOTALwatt + fanTOTALwatt) * 300
+
+        // document.write("YOUR TOTAL  BILL = " + result + "TK" )
+        document.write(`<h1 style="font-family:ROBOTO">YOUR TOTAL BILL = ${result} TAKA </h1>`)
+
+        if (result < 10000) {
+            document.write(`<h1 style="font-family:ROBOTO">
+                Dear You, Your connection will be discontinued.<br>Please pay fast to avoid disconnection.<br>Your due amount =${result}Tk.<br>Bkash No.=01537-28****
+                <h1>`)
+        }
+        else{
+            document.write(`<h1 style="font-family:ROBOTO">
+                Dear You, Your connection will be discontinued.<br>Please pay fast to avoid disconnection.<br>Your due amount =${result}Tk.<br>Bkash No.=01537-28****
+                <h1>`)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
